@@ -1,0 +1,240 @@
+/* reset */ 
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* theme */
+
+:root {
+  --primary-color: #ff5000;
+  --black-color: #000000;
+  --white-color: #fff;
+  --heading-font: 'Poppins', sans-serif ,Arial, Helvetica, sans-serif;
+  --primary-font: 'Poppins', sans-serif ,Arial, Helvetica, sans-serif;
+}
+
+
+/* typography */
+
+body {
+  font-family: var(--primary-font);
+  font-size: 14px;
+  line-height: 1.7;
+  color: #fff;
+  background: #000;
+  
+}
+
+h1, h2, h3 {
+  font-family: var(--heading-font);
+  line-height: 1.2;
+}
+
+h2 {
+  margin: 16px 0;
+  font-size: 30px;
+}
+
+h3 {
+  margin: 12px 0;
+  font-size: 24px;
+}
+
+h4 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+p {
+  margin-top: 0;
+  margin: 8px 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* layout */
+
+.container {
+  max-width: 1140px;
+  margin: 0 15px;
+}
+
+@media (min-width: 1170px) {
+  .container { 
+    margin: 0 auto;
+  }
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+/* components */ 
+
+/* - crumbs - */
+
+.breadcrumbs {
+  font-size: 0;
+}
+
+.crumb, .current {
+  font-size: 16px;
+}
+
+.crumb::after {
+  padding: 0 8px;
+  display: inline-block;
+  content: ">";
+}
+
+/* shame: vertical aligning the breadcurmb separator */
+.crumb::after {
+  position: relative;
+  top: 1px;
+}
+
+/* - cta - */
+
+.cta {
+  display: inline-block;
+  padding: 0 30px;
+  font-size: 16px;
+  line-height: 40px;
+  color: var(--primary-color);
+  background-color: var(--black-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 20px;
+}
+
+/* - section-title - */
+
+.section-title {
+  margin: 0 0 40px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.section-title::after {
+  display: block;
+  margin: 0 auto;
+  content: " ";
+  width: 51px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+/* - card - */
+
+.card {
+  margin-bottom: 15px;
+  color: var(--black-color);
+  background-color: var(--white-color);
+  border-radius: 4px;
+}
+
+.card-header {
+  padding: 15px;
+  border-bottom: 1px solid var(--black-color);
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.card-contents {
+  padding: 15px;
+}
+
+.card-footer {
+  padding: 0 15px 15px;
+}
+
+.card .cta {
+  font-size: 14px;
+  line-height: 30px;
+  color: var(--primary-color);
+  background-color: transparent;
+}
+
+
+/* - stats - */
+
+.stats {
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px;
+  list-style: none;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.stat-title {
+  margin: 0 0 15px;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.stat-highlight {
+  font-size: 40px;
+}
+
+
+@media (min-width: 600px) {
+  .stats {
+    display: flex;
+  }
+  
+  .stat {
+    width: calc(50% - 7.5px);
+  }
+}
+
+@media (min-width: 880px) {
+  .stat {
+    width: calc(33.333333333% - 10px);
+  }
+}
+
+
+/* - site-header - */
+
+#site-header {
+  margin-bottom: 40px;
+  padding: 80px;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+#site-header .site-title {
+  margin: 0 0 8px;
+  font-size: 40px;
+}
+  
+#site-header a {
+  text-decoration: none;
+}
