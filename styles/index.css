@@ -83,6 +83,37 @@ a {
   margin-bottom: 40px;
 }
 
+.onetwo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.onethird {
+  width: calc(33.333333% - 7.5px);
+  display: flex;
+  flex-direction: column;
+}
+
+.twothirds {
+  width: calc(66.666666% - 7.5px);
+}
+
+.halfhalf {
+  display: flex;
+  flex-direction: column-reverse;
+  width: calc(100% - 30px);
+}
+
+@media (min-width: 940px) {
+  .halfhalf{
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .half {
+    width: calc(50% - 7.5px);
+  }
+}
+
 /* components */ 
 
 /* - crumbs - */
@@ -237,4 +268,19 @@ a {
   
 #site-header a {
   text-decoration: none;
+}
+
+/* - intro - */
+
+.half img {
+  width: 100%;
+  max-height: 300px;
+}
+
+.half h2 {
+  color: var(--primary-color);
+}
+
+.half p {
+  margin-bottom: 30px;
 }
