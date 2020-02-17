@@ -24,6 +24,9 @@ html {
   --primary-font: 'Poppins', sans-serif ,Arial, Helvetica, sans-serif;
 }
 
+::selection {
+  background: #87cefa;
+}
 
 /* typography */
 
