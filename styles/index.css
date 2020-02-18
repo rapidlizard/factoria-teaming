@@ -284,3 +284,55 @@ a {
 .half p {
   margin-bottom: 30px;
 }
+
+/* - Members - */
+
+
+@media (min-width: 600px) {
+  .user {
+    width: 50%;
+  }
+  .userinfo {
+    width: 260px;
+  }
+}
+
+.users {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user {
+  display: flex;
+  height: 140px;
+  margin-bottom: 10px;
+}
+
+.user img {
+  width: 80px;
+  height: 110px;
+}
+
+.userpic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.userinfo {
+  margin-left: 7.5px;
+}
+
+.userinfo h4 {
+  margin: 0;
+}
+
+.userinfo p {
+  margin: 0;
+}
+
+.userinfo u {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
