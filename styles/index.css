@@ -86,21 +86,6 @@ a {
   margin-bottom: 40px;
 }
 
-.onetwo {
-  display: flex;
-  justify-content: space-between;
-}
-
-.onethird {
-  width: calc(33.333333% - 7.5px);
-  display: flex;
-  flex-direction: column;
-}
-
-.twothirds {
-  width: calc(66.666666% - 7.5px);
-}
-
 .halfhalf {
   display: flex;
   flex-direction: column-reverse;
@@ -114,6 +99,18 @@ a {
   }
   .half {
     width: calc(50% - 7.5px);
+  }
+  .onetwo {
+    display: flex;
+    justify-content: space-between;
+  }
+  .onethird {
+    width: calc(33.333333% - 7.5px);
+    display: flex;
+    flex-direction: column;
+  }
+  .twothirds {
+    width: calc(66.666666% - 7.5px);
   }
 }
 
